@@ -1,0 +1,15 @@
+name: GTA6 Shorts Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * *"
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test automation
+        run: |
+          echo "GTA6 Shorts Automation started!"
+          echo "Cloud workflow is working!"
